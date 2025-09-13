@@ -1,0 +1,10 @@
+* { box-sizing: border-box; }
+body { margin: 0; font-family: system-ui, -apple-system, Arial, sans-serif; line-height: 1.5; }
+.site-header, .site-footer { padding: 16px; border-bottom: 1px solid #ddd; }
+.site-footer { border-top: 1px solid #eee; border-bottom: none; text-align: center; color: #555; }
+main { max-width: 900px; margin: 24px auto; padding: 0 16px; }
+.book-list { list-style: none; padding: 0; display: grid; gap: 16px; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); }
+.book-card { border: 1px solid #eee; border-radius: 12px; padding: 16px; box-shadow: 0 2px 6px rgba(0,0,0,0.05); }
+h1, h2, h3 { margin: 0 0 8px; }
+nav a { margin-right: 12px; text-decoration: none; color: #333; }
+nav a:hover { text-decoration: underline; }

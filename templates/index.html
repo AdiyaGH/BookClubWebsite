@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% block content %}
+  <section>
+    <h2>Current Reading List</h2>
+    <ul class="book-list">
+      {# A loop! We iterate over the list of dicts from Python #}
+      {% for book in books %}
+        <li class="book-card">
+          <h3>{{ book.title }}</h3>
+          <p>Author: {{ book.author }}</p>
+          <p>Status: <strong>{{ book.status }}</strong></p>
+        </li>
+      {% endfor %}
+    </ul>
+  </section>
+{% endblock %}
